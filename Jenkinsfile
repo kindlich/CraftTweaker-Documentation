@@ -18,18 +18,18 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building wiki files'
-				sh ./build.sh
+				sh './build.sh'
             }
         }
         stage('Test') {
         	steps {
         		echo 'Testing...'
-        	}
+        	    }
+            }
         }
-    }
     post {
-        success {
-            echo "Success, now moving to web server"
+        always {
+            echo 'Success, now moving to web server'
         }
     }
 }
