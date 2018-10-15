@@ -6,7 +6,7 @@ pipeline {
         stage('Clean') {
             steps {
             	echo 'Removing previously generated outputs'
-                rm build -d -r
+                //rm build -d -r
             }
         }
         stage('Setup') {
