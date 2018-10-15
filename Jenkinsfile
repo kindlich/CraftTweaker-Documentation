@@ -12,7 +12,7 @@ pipeline {
         stage('Setup') {
             steps {
                 echo 'Setting up pip dependencies'
-                pip install mkdocs==0.16.3
+                //pip install mkdocs==0.16.3
             }
         }
         stage('Build') {
