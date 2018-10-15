@@ -19,7 +19,6 @@ pipeline {
             steps {
                 echo 'Building wiki files'
 				sh ./build.sh
-                }
             }
         }
         stage('Test') {
@@ -27,6 +26,7 @@ pipeline {
         		echo 'Testing...'
         	}
         }
+    }
     post {
         success {
             echo "Success, now moving to web server"
