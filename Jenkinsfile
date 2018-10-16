@@ -6,7 +6,7 @@ pipeline {
         stage('Clean') {
             steps {
             	echo 'Removing previously generated outputs'
-                //rm build -d -r
+                rm build -d -r -f
             }
         }
         stage('Setup') {
@@ -30,6 +30,7 @@ pipeline {
     post {
         always {
             echo 'Success, now moving to web server'
+            mv -f build $Wiki_Server_Dir
         }
     }
 }
