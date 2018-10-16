@@ -24,7 +24,7 @@ pipeline {
     post {
         always {
             echo 'Success, now moving to web server'
-            sh 'mv -f build $Wiki_Server_Dir'
+            sh "mv -f build ${Wiki_Server_Dir}"
         }
     }
 }
