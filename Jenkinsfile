@@ -22,7 +22,7 @@ pipeline {
             }
         }
     post {
-        always {
+        success {
             echo 'Success, now moving to web server'
             sh './move_to_webDir.sh'
         }
