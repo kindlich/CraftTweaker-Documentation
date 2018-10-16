@@ -12,6 +12,7 @@ TRANS=./*
 
 for f in $TRANS
 do
+  cd $f
   echo "Processing folder $f"
   #will refer to start folder/build/languageCode
   SITEDIR="../../build/${f#"./"}"
