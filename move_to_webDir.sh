@@ -1,1 +1,1 @@
-cp -r -f build $Wiki_Server_Dir
+cp -r -f build/* $webDir
