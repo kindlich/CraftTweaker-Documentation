@@ -1,1 +1,1 @@
-mv -f build -t $Wiki_Server_Dir
+cp -f build $Wiki_Server_Dir
