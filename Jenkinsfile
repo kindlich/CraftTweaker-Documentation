@@ -3,12 +3,6 @@
 pipeline {
     agent any
     stages {
-        stage('Clean') {
-            steps {
-            	echo 'Removing previously generated outputs'
-                rm build -d -r -f
-            }
-        }
         stage('Setup') {
             steps {
                 echo 'Setting up pip dependencies'
