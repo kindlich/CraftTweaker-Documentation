@@ -2,7 +2,7 @@
 
 echo "start"
 echo "Building english site"
-mkdocs build --clean --site-dir ./build/en_US
+mkdocs build --clean --site-dir ./build/en
 
 
 cd ./translations
