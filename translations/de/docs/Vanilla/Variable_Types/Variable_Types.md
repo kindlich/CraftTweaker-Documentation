@@ -2,7 +2,7 @@
 
 As you surely already messed a bit with variables and values, you must've wondered, how CraftTweaker knows whether it's dealing with an Integer, an Item or an oreDic entry?
 
-The easiest way of declaring a variable is using ```var name = value;```. This creates the variable and casts it to the value it thinks is most fitting for the situation.
+The easiest way of declaring a variable is using ```var name = value;```erstellt. This creates the variable and casts it to the value it thinks is most fitting for the situation.
 
 ## Casting a variable to a specific type
 
