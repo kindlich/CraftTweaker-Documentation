@@ -4,7 +4,7 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 ## Ein Array erstellen
 
-Ein Array wird mithilfe von eckigen Klammern, also ```[``` und ```]```53513066erstellt.
+Ein Array wird mithilfe von eckigen Klammern, also ```[``` und ```]```84170596erstellt.
 
     //Array containing "Hello" and "World"
     val stringArray = ["Hello", "World"] as string[];
