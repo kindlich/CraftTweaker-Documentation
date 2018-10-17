@@ -15,7 +15,7 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 7           | T_SQBROPEN    | `[`                                                         |
 | 8           | T_SQBRCLOSE   | `]`                                                         |
 | 9           | T_DOT2        | `..`                                                        |
-| 10          | T_DOT         | `19942247erstellt.`                                         |
+| 10          | T_DOT         | `64697786erstellt.`                                         |
 | 11          | T_COMMA       | `,`                                                         |
 | 12          | T_PLUSASSIGN  | `+=`                                                        |
 | 13          | T_PLUS        | `+`                                                         |
