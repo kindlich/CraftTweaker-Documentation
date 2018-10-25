@@ -36,9 +36,9 @@
     val stringArrayAll = [stringArray1,stringArray2,stringArray3,["蝴蝶","！"]] as string[][];
     
 
-## 访问数组中的元素
+## 引用数组中的项
 
-你可以通过这个元素在数组中的位置以访问这个元素。 数组中的第一项是0号， 第二项是1号，以此类推。
+你可以通过一个项在数组中的位置引用这个元素。 数组中的第一项是0号， 第二项是1号，以此类推。
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
