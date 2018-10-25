@@ -55,23 +55,23 @@
     
     
     //嵌套数组
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beautiful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    val stringArray1 = ["你好","世界"] as string[];
+    val stringArray2 = ["我","是"] as string[];
+    val stringArray3 = ["一只","美丽的"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["蝴蝶","！"]] as string[][];
     
     /*
-    stringArrayAll[0] is ["Hello","World"]
-    stringArrayAll[1] is ["I","am"]
-    stringArrayAll[2] is ["a","beautiful"]
-    stringArrayAll[3] is ["Butterfly","!"]
+    stringArrayAll[0] 为 ["你好","世界"]
+    stringArrayAll[1] 为 ["我","是"]
+    stringArrayAll[2] 为 ["一只","美丽的"]
+    stringArrayAll[3] 为 ["蝴蝶","！"]
     
-    stringArrayAll[0][0] is "Hello"
-    stringArrayAll[0][1] is "World"
-    etc.
+    stringArrayAll[0][0] 为 "你好"
+    stringArrayAll[0][1] 为 "世界"
+    以此类推
     */
     
-    //prints "World"
+    //打印 "世界"
     print(stringArrayAll[0][1]);
     
 
