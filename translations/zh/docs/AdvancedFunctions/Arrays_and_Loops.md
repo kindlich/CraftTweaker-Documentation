@@ -26,19 +26,19 @@
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## 嵌套数组
 
-You can place Arrays in Arrays.
+数组中可以嵌套数组。
 
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beatuful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    val stringArray1 = ["你好","世界"] as string[];
+    val stringArray2 = ["我","是"] as string[];
+    val stringArray3 = ["一只","漂亮的"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["蝴蝶","！"]] as string[][];
     
 
-## Reffering to items in an Array
+## 访问数组中的元素
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+你可以通过这个元素在数组中的位置以访问这个元素。 The first item in an Array is No. 0, the 2nd No.1 and so on.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
