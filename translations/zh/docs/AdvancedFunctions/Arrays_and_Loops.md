@@ -2,14 +2,14 @@
 
 数组是一个包含多个相同类型项的列表。
 
-## Declaring Arrays
+## 声明数组
 
-使用 ```[``` 和 ```]```.
+使用 ```[``` 和 ```]以声明数组```.
 
-    //Array containing "Hello" and "World"
-    val stringArray = ["Hello", "World"] as string[];
+    //包含"你好"和"世界"的数组
+    val stringArray = ["你好", "世界"] as string[];
     
-    //Array containing 1-3
+    //包含数字 1,2,和3 的数组
     val intArray = [1,2,3] as int[];
     
 
