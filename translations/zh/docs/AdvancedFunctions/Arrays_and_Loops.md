@@ -40,21 +40,21 @@
 
 你可以通过一个项在数组中的位置引用这个元素。 数组中的第一项是0号， 第二项是1号，以此类推。
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+如果要引用嵌套数组中的项, 则需要两个或多个数字表示它的位置，因为每个位置只会表示一个数组中的项。
 
     /*
-    stringArray[0] is "Hello"
-    stringArray[1] is "World"
-    stringArray[2] is "I"
-    stringArray[3] is "am"
+    stringArray[0] 为 "你好"
+    stringArray[1] 为 "世界"
+    stringArray[2] is "我"
+    stringArray[3] is "是"
     */
-    val stringArray = ["Hello","World","I","am"] as string[];
+    val stringArray = ["你好","世界","我","是"] as string[];
     
-    //prints "Hello"
+    //输出"你好"
     print(stringArray[0]);
     
     
-    //Nested Arrays
+    //嵌套数组
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
     val stringArray3 = ["a","beautiful"] as string[];
