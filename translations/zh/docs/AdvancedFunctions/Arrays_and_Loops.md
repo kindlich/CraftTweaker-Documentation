@@ -1,4 +1,4 @@
-# Arrays
+# 数组（Arrays）
 
 An array is a List containing several items of the same kind.
 
