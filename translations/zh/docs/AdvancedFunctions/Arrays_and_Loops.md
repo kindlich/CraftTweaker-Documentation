@@ -13,12 +13,12 @@
     val intArray = [1,2,3] as int[];
     
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+也许你会说：“等等，我以前好想见过这些数组……”你确实见过。 还记得 ```recipes.add(out,[[],[],[]]);吗？```? 这一块就用了三个数组，每个数组又包含三个条目，以此来定义工作台配方。
 
-## Casting Arrays
+## 创建数组
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+您肯定注意到这里的所有数组都有 ` as ` 语句.   
+为什么？ 这是因为 ZenScript 有时无法预测数组中项的类型。 This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
