@@ -18,9 +18,9 @@
 ## 创建数组
 
 您肯定注意到这里的所有数组都有 ` as ` 语句.   
-为什么？ 这是因为 ZenScript 有时无法预测数组中项的类型。 This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+为什么？ 这是因为 ZenScript 有时无法预测数组中项的类型。 这就会导致游戏中会出现类型转换错误！  
+为此，最安全的方法就是在构建数组的时候就指定正确的类型！  
+还有一点，如果你构建了一个非基本类型（即字符串，整型类似的类型之外的其他类型）数组，请确保你[导入](Import/)了对应的包，并将它放在脚本的最顶上：
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
