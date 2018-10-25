@@ -38,7 +38,7 @@
 
 ## 访问数组中的元素
 
-你可以通过这个元素在数组中的位置以访问这个元素。 The first item in an Array is No. 0, the 2nd No.1 and so on.
+你可以通过这个元素在数组中的位置以访问这个元素。 数组中的第一项是0号， 第二项是1号，以此类推。
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
