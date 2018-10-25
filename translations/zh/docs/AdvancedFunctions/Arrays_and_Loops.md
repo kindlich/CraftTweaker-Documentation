@@ -1,10 +1,10 @@
 # 数组（Arrays）
 
-An array is a List containing several items of the same kind.
+数组是一个包含多个相同类型项的列表。
 
 ## Declaring Arrays
 
-It is declared using ```[``` and ```]```.
+使用 ```[``` 和 ```]```.
 
     //Array containing "Hello" and "World"
     val stringArray = ["Hello", "World"] as string[];
