@@ -91,11 +91,11 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
     val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
     
     
-    //for [IntegerName, ] elementName in IArray {code}
+    //for [IntegerName, ] 项名称 in IArray {代码}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //定义 "item" 变量，它会遍历 IArray 中的每一项。 (例如 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //就可以使用这个变量了
         recipes.remove(item);
     }
     
