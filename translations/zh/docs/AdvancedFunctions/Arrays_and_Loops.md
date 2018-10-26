@@ -13,12 +13,12 @@
     val intArray = [1,2,3] as int[];
     
 
-也许你会说：“等等，我以前好想见过这些数组……”你确实见过。 还记得 ```recipes.add(out,[[],[],[]]);吗？```? 这一块就用了三个数组，每个数组又包含三个条目，以此来定义工作台配方。
+也许你会说：“等等，我以前好想见过这些数组……”你确实见过。 还记得 ```recipes.add(out,[[],[],[]]);吗？```? 这里就使用了三个数组，每个数组又包含三个条目，以此来定义工作台配方。
 
 ## 创建数组
 
 您肯定注意到这里的所有数组都有 ` as ` 语句。  
-为什么？ 这是因为 ZenScript 有时无法预测数组中项的类型。 这就会导致游戏中会出现类型转换错误！  
+你问为什么会这样？ 这是因为 ZenScript 有时无法预测数组中项的类型。 这就会导致游戏中会出现类型转换错误！  
 为此，最安全的方法就是在构建数组的时候就指定正确的类型！  
 还有一点，如果你构建了一个非基本类型（即字符串，整型类似的类型之外的其他类型）数组，请确保你[导入](Import/)了对应的包，并将它放在脚本的最顶上：
 
@@ -75,14 +75,14 @@
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# 循环
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+循环是一个重复自身的函数。 它用于将操作应用于数组中的所有元素
 
-## For Loop
+## For 循环
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组中的每一项执行一次操作。  
+使用 `break` 关键字中断循环。
 
     import crafttweaker.item.IItemStack;
     
