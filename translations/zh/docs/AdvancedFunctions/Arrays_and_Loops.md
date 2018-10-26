@@ -124,7 +124,7 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
     }
     
 
-## While Loop
+## While 循环
 
 The while loop executes the given code as long as the given condition evaluates to `true`.  
 Alternatively, you can stop it using the `break` keyword.
