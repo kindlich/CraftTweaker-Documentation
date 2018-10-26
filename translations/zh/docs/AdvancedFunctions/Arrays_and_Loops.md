@@ -38,19 +38,19 @@
 
 ## 引用数组中的项
 
-你可以通过一个项在数组中的位置引用这个元素。 数组中的第一项是0号， 第二项是1号，以此类推。
+你可以通过一个项在数组中的位置引用这个元素。 数组中的第一项的序数是0， 第二项是1，以此类推。
 
-如果要引用嵌套数组中的项, 则需要两个或多个数字表示它的位置，因为每个位置只会表示一个数组中的项。
+如果要引用嵌套数组中的项，则需要两个或多个序数表示它的位置，因为每个序数只指代数组中的一个项。
 
     /*
     stringArray[0] 为 "你好"
     stringArray[1] 为 "世界"
-    stringArray[2] is "我"
-    stringArray[3] is "是"
+    stringArray[2] 为 "我"
+    stringArray[3] 为 "是"
     */
     val stringArray = ["你好","世界","我","是"] as string[];
     
-    //输出"你好"
+    //打印"你好"
     print(stringArray[0]);
     
     
@@ -91,25 +91,25 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
     val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
     
     
-    //for [IntegerName, ] 项名称 in IArray {代码}
+    //for [序数名称, ] 项名称 in IArray {代码}
     
     for item in IArray {
-        //定义 "item" 变量，它会遍历 IArray 中的每一项。 (例如 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //就可以使用这个变量了
+        //定义变量 "item" ，它会遍历 IArray 中的每一项。 (例如 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //然后就可以使用这个变量了！
         recipes.remove(item);
     }
     
     for i, item in IArray {
-        //defines the variavle "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //定义变量 "i" ，它会遍历 IArray 中每一项的序数(例如 0,1,2,...)
+        //定义变量 "item" ，它会遍历 IArray 中的每一项。 (例如 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //然后就可以使用这些变量了！
     
-        //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+        //使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（例如用木斧和草方块合成泥土，用木板和木头合成金铲，用金锭和绿宝石合成钻石）
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
     }
     
     for i in 0 to 10 {
-        //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+        //定义变量 "i" ，它会遍历 0 至 9 的每一个整数（例如 0,1,2,...,8,9）
         print(i);
     }
     
