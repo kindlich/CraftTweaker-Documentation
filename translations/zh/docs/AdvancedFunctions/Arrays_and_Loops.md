@@ -114,12 +114,12 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //定义变量 “i"，它会遍历 10 至 19 的每一个整数（例如 10,11,12,...,18,19）
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //定义变量 "item" ，它会遍历模组 ID 为 "minecraft" 的所有物品并移除它们的合成配方
         recipes.remove(item);
     }
     
