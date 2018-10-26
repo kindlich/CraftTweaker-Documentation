@@ -126,12 +126,12 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
 
 ## While 循环
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+While 循环会在给定条件为 `true` 时执行循环。  
+另外也可以使用 `break` 关键字中断循环。
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //将输出 0 - 9 ，因为在下一轮循环中，由于 i 等于 10，使得 i < 10 的判断结果为false。
     while i < 10 {
         print(i); 
         i += 1;
@@ -140,7 +140,7 @@ Alternatively, you can stop it using the `break` keyword.
     print("After loop: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //会输出 10 - 6，因为在下一轮循环中 i== 5，使循环中断
     while (i > 0) {
         if i == 5
             break;
@@ -158,11 +158,11 @@ Alternatively, you can stop it using the `break` keyword.
     }
     
 
-# Adding items to an Array
+# 向数组中添加项
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+虽然不建议这样做，但将项添加到数组中是完全可行的。  
+但只能将单个项添加到数组中，也不能添加两个数组。  
+使用 ` + ` 运算符向数组中添加项：
 
 ```java
 import crafttweaker.item.IItemStack;
