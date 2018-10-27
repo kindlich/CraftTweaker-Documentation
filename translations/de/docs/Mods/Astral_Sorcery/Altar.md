@@ -39,7 +39,8 @@ Unlike vanilla recipe names, they are not optional and you will encounter errors
 You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.
 
 All recipe addition methods require these parameters:  
-string `recipeLocation`, [IItemStack](/Vanilla/Items/IItemStack/) `output`,  
+string `recipeLocation`,  
+[IItemStack](/Vanilla/Items/IItemStack/) `output`,  
 int `starlightRequired`,  
 int `craftingTickTime`,  
 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] `inputs`
