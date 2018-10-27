@@ -6,7 +6,7 @@ ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`
 
 ## 介绍
 
-Ever went into building a modpack and then found that just throwing in a bunch of mods didn't give you an integrated experience? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+你有过这样的经历吗？你做了一个整合包，却发现自己只是堆砌了一堆模组，却并没有带来任何综合性的体验？ 模组的制作都是相对独立的，相比起别的模组，总是有几个显得过于 OP。 也许你认为一些物品有更好的配方， 也许你渴望在不移除整个模组的情况下，仅仅删除其中的一个物品， 也许你发现一些矿物词典包含过多或过少的物品…… 现在你可以全部做到——只需要一条 MineTweaker 指令。
 
 In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
 
