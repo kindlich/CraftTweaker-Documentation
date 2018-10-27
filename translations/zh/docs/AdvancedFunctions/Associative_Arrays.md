@@ -32,25 +32,25 @@ val myAssocArray = {
 
 ## 引用关联数组中的项
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
-`Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+你可以像访问[数组](Arrays_and_Loops/)中的项一样访问一个关联数组中的项：  
+`数组名[索引]`  
+唯一不同之处在于，现在不必通过整数序号来访问数组，而是通过你之前预先声明的索引来访问！
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    &lt;minecraft:dirt&gt; : "这是我"
 } as string[IItemStack];
 
-//array[index]
+//数组名[索引]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//只要类型匹配，这里也可以使用变量
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+有一种特殊情况，当索引为字符串的时：  
+使用以下方法就可以直接引用项：
 
 ```JAVA
 val assocWithStrings = {
