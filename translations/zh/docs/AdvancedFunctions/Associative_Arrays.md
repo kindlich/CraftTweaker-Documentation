@@ -89,7 +89,7 @@ changingArray[gg] = "我爱它";
 changingArray[<minecraft:grass>] = "能量！";
 ```
 
-## 检索关联数组的键集和项集
+## 检索关联数组的索引集和项集
 
 The KeySet is an array containing all the map's keys.  
 The valueSet is an array containing all the map's values.  
