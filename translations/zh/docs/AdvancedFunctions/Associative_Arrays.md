@@ -30,7 +30,7 @@ val myAssocArray = {
 - 使用 2 个变量的遍历方法无法遍历使用数组作为值的数组。
 - 不能使用变量作为声明数组的键（使用`{}`的那个），因为这些文本会当成字符串处理！
 
-## Refering to Items inside an Associative Array.
+## 引用关联数组中的项
 
 You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
 `Array[index]`  
