@@ -14,9 +14,9 @@ ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`
 
 脚本被存放在`<游戏主目录>/scripts` 文件夹，并在游戏的`预加载（PreInitialization）`阶段加载。不同于先前版本的 Crafttweaker，脚本无法被重新加载。这是因为 Mojang 对 1.12 版本的改动，目前仍无解决方案。 最后，脚本需要**同时在服务端和客户端上**才能启用。
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+所有以 `.zs` 为后缀的脚本文件可以被压缩为 `.zip` 文件，且压缩后仍旧能够正常读取。
 
-### Writing your first script
+### 书写您的第一个脚本
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
 
