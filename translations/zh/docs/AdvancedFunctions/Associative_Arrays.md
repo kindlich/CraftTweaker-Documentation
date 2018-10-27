@@ -26,9 +26,7 @@ val myAssocArray = {
 好的，那么我在使用它们时需要注意些什么呢？
 
 - Zenscript 中绝大部分数据类型都可以作为键或值。
-- 不能遍历一个使用数组作为键的关联数组。
-- 使用 2 个变量的遍历方法无法遍历使用数组作为值的数组。
-- 不能使用变量作为声明数组的键（使用`{}`的那个），因为这些文本会当成字符串处理！
+- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
 ## 引用关联数组中的项
 
