@@ -72,24 +72,24 @@ print(assocWithStrings["two"]);
 
 与数组一样，可以使用 ` 数组名[索引] = 新的值 ` 来修改关联数组中的项.   
 但有一个主要的区别：   
-数组有固定长度，但索引没有。 That means you can always add an entry by setting to an index that has previously not been set!
+数组有固定长度，但索引没有。 这意味着你随时可以通过向数组中添加先前并不包含的索引来添加新的项！
 
 ```JAVA
 val changingArray = {
-    <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "and I hate it"
+    <minecraft:dirt> : "这是我",
+    <minecraft:gold_ingot> : "我讨厌它"
 } as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//覆盖 gold_ingot 的值
+changingArray[gg] = "我爱它";
 
-//adds a new entry
-changingArray[<minecraft:grass>] = "Power!";
+//添加新条目
+changingArray[<minecraft:grass>] = "能量！";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## 检索关联数组的键集和项集
 
 The KeySet is an array containing all the map's keys.  
 The valueSet is an array containing all the map's values.  
