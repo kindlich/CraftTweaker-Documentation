@@ -12,7 +12,7 @@ ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`
 
 ## 脚本
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+脚本被存放在`<游戏主目录>/scripts` 文件夹，并在游戏的`预加载（PreInitialization）`阶段加载。不同于先前版本的 Crafttweaker，脚本无法被重新加载。这是因为 Mojang 对 1.12 版本的改动，目前仍无解决方案。 最后，脚本需要**同时在服务端和客户端上**才能启用。
 
 Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
 
