@@ -50,29 +50,29 @@ print(assocArray[dirt]);
 ```
 
 有一种特殊情况，当索引为字符串的时：  
-使用以下方法就可以直接引用项：
+使用memberGetter方法（见下）就可以直接引用项：
 
 ```JAVA
 val assocWithStrings = {
-    //you can use "" if you want
+    //你可以使用 ""
     "one" : "1",
 
-    //but you don't have to
+    //但这不是强制的
     two : "2"
 } as string[string];
 
-//You can either use the memberGetter
+//你既可以使用 memberGetter
 print(assocWithStrings.one);
 
-//Or the standard index Getter
+//也可以使用传统的索引
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## 修改关联数组中的项
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+与数组一样，可以使用 ` 数组名[索引] = 新的值 ` 来修改关联数组中的项.   
+但有一个主要的区别：   
+数组有固定长度，但索引没有。 That means you can always add an entry by setting to an index that has previously not been set!
 
 ```JAVA
 val changingArray = {
