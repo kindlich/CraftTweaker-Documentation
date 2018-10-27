@@ -35,28 +35,28 @@ ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`
 
 ` crafttweaker.log ` 文件的输出会使用一种特殊的语法，基本的语法结构如下：
 
-    [LOADERSTAGE][SIDE][TYPE] <message>
+    [Forge 加载阶段（LOADERSTAGE）][端（SIDE）][类型（TYPE）] <信息>
     
 
-Using the example above, the output would be:
+先前脚本的输出如下：
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    [PREINITIALIZATION][CLIENT][INFO] 你好，世界
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+这个语法用于调试，也只有命令的输出信息不使用此语法，在这种情况下，它只是打印消息，这样做能够更容易的复制粘贴输出信息。
 
-### Comments
+### 注释
 
-Comments can be used to make your script files more readable and easier to understand!
+注释可以用来使您的脚本文件更易于阅读，更容易理解!
 
-ZenScript supports 3 types of comments, being:
+ZenScript 支持三种不同的注释书写方法，它们分别是：
 
-Single line: `// I'm a single line comment!`
+单行注释： `// 我是一条单行注释！`
 
-Alternate Single Line: `# I'm also a single line comment!`
+另一种单行注释 `# 我也是一条单行注释！`
 
-Multiline:
+多行注释：
 
-    /* I'm 
-    a
-    multiline comment! */
+    /* 我是
+    一条
+    多行注释！ */
