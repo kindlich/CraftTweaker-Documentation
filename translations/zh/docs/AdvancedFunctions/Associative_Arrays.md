@@ -4,7 +4,7 @@
 
 ## 声明关联数组
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+使用大括号 ` {} ` 和冒号 `: ` 来声明关联数组
 
 ```JAVA
 val myAssocArray = {
@@ -13,19 +13,19 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+让我们对其进行拆分分析：
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- ` val myAssocArray = ` 标准变量声明
+- ` {` 先生，这是一个关联数组！
+- `dirt : <minecraft:dirt>` 使用 `dirt` 字符串映射 `<minecraft:dirt>`
+- `, ` 等下，这还没完
+- `gold : <minecraft:gold_ingot>` 使用 `gold` 字符串映射 `<minecraft:gold_ingot>`
+- `} ` 长官，数组已经写完了！
+- ` as IItemStack[string]; `说明这是使用字符串作为索引、 IItemStacks 作为值的关联数组。
 
-Okay, so what do I need to think of when using these?
+好的，那么我在使用它们时需要注意些什么呢？
 
-- You can use about every type available to Zenscript as either key or value.
+- Zenscript 中绝大部分数据类型都可以作为键或值。
 - You cannot iterate over an Associative Array that uses Arrays as keys.
 - You cannot use the 2-Variable Iterator when iterating over an Array that uses Arrays as values.
 - You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
