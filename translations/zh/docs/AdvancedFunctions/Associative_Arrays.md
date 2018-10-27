@@ -87,18 +87,18 @@ changingArray[gg] = "我爱它";
 changingArray[<minecraft:grass>] = "能量！";
 ```
 
-## 检索关联数组的索引集和项集
+## 检索关联数组的键集和项集
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+键集（KeySet）是一个包含了所有映射的键的数组。  
+项集（valueSet）是一个包含了所有映射的项的数组。  
+条目集（entrySet）是一个包含了所有映射条目的数组（见下）。
 
 ```JAVA
-myAssocArray.keySet   //keySet
-myAssocArray.keys     //keySet
-myAssocArray.values   //valueSet
-myAssocArray.valueSet //valueSet
-myAssocArray.entrySet //entrySet
+myAssocArray.keySet   //键集
+myAssocArray.keys     //键集
+myAssocArray.values   //项集
+myAssocArray.valueSet //项集
+myAssocArray.entrySet //条目集
 ```
 
 ## Iterating over an Associative Array
