@@ -18,22 +18,22 @@ ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`
 
 ### 书写您的第一个脚本
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+如果你想开始书写一个脚本，你需要创建一个非常基本的脚本文件，这个文件可以起名叫做 `hello.zs`，并放置在 `<游戏主目录>/scripts` 文件夹下。
 
-In `hello.zs` put the following line
+在 `hello.zs` 文件中写入以下内容：
 
-    print("Hello world!");
+    print("你好，世界！");
     
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+接着启动 Minecraft 并查看 `crafttweaker.log` 文件。
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+`crafttweaker.log` 文件位于 <0><游戏主目录></0> 下，它能够被任何读取文本文档的软件打开。
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+这里推荐使用 Notepad++ 或者 Sublime Text 来编辑脚本文件，当然别的程序也可以。
 
-### The crafttweaker.log file
+### crafttweaker.log 文件
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+` crafttweaker.log ` 文件的输出会使用一种特殊的语法，基本的语法结构如下：
 
     [LOADERSTAGE][SIDE][TYPE] <message>
     
