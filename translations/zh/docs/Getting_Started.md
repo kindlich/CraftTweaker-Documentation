@@ -1,4 +1,4 @@
-# Getting Started with scripts
+# 脚本入门
 
 Crafttweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
 
