@@ -101,14 +101,14 @@ myAssocArray.valueSet //项集
 myAssocArray.entrySet //条目集
 ```
 
-## Iterating over an Associative Array
+## 遍历一个关联数组
 
-There are two Iterators that allow you to iterate over an Associative Array:
+这里提供了两种遍历方法来遍历关联数组：
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- 键遍历法：遍历所有的键，只需要传入一个参数
+- 键-项遍历法：同时遍历键和项，需要传入两个参数
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+让我们来遍历一个存储了工作台配方的关联数组：
 
 - Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
 - Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
