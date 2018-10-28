@@ -34,22 +34,22 @@
 
 数学运算基本上会直接返回结果。 所以能用它干什么呢？
 
-### Assigning a variable
+### 给变量赋值
 
-There are two ways of assigning a value to a variable:
+有两种方法能够给变量赋值：
 
     var test = 0;
     
-    //Option 1:
-    //assigns test with the value 3 (1+2)
+    //选择1:
+    //将 3 （1+2的运算结果）赋给变量 text
     test = 1+2;
     
-    //Option 2:
-    //assigns test with 5 (3+2)
+    //选择2:
+    //将 5 （3+2 的运算结果）赋给变量 text
     test = test + 2;
     
     //Option 3:
-    //assigns test with 2 (5-3)
+    //将 2 （5-3 的运算结果）赋给变量 text
     test -= 3;
     
 
