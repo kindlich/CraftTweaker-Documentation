@@ -24,15 +24,15 @@
 
 ## 连接
 
-Puts one thing at the and of the other
+将内容放在原内容后面
 
-    //prints "Hello World"
-    print("Hello" ~ " " ~ "World");
+    //打印 "你好 世界"
+    print("你好" ~ " " ~ "世界");
     
 
-## Calculation results
+## 运算结果
 
-A calculation usually ends up with a result. So what to do with that?
+数学运算基本上会直接返回结果。 所以能用它干什么呢？
 
 ### Assigning a variable
 
