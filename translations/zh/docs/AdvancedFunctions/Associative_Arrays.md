@@ -127,30 +127,30 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//键是 草（grass）、金锭（goldIngot）和泥土（dirt）
 for key in recipeMapShaped {
     recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//键是 草（grass）、金锭（goldIngot）和泥土（dirt），值是 他们各自的配方
 for key, value in recipeMapShaped {
     recipes.addShaped(key, value);
 }
 ```
 
-# ZenType Entry
+# ZenType 条目
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+一个映射条目包含一组键和值。  
+目前仅能通过映射的 entrySet 方法获取这个条目。
 
-You can use the getters to get `key` and `value`
+你可以使用 getters 来具体获取其中的 `键` 和 `值`
 
 ```kotlin
-//Replace map with a reference to an existing map/associative array
+//从已有的映射/关联数组获取映射条目
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    //返回条目的键。
+myEntry.value;  //返回该条目的值。
 ```
