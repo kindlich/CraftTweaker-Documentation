@@ -106,14 +106,14 @@ myAssocArray.entrySet //条目集
 这里提供了两种遍历方法来遍历关联数组：
 
 - 键遍历法：遍历所有的键，只需要传入一个参数
-- 键-项遍历法：同时遍历键和项，需要传入两个参数
+- 键-值遍历法：同时遍历键和值，需要传入两个参数
 
 让我们来遍历一个存储了工作台配方的关联数组：
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- 键作为的配方的输出，类型为 [物品堆（IItemStack）](/Vanilla/Items/IItemStack/)
+- 值作为配方的输入，类型为 [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)
+- 我们将使用如下所示的键迭代器: ` for key in assocArray {代码;}`
+- 我们也可以使用如下所示的键-值迭代器: ` for key, value in assocArray {代码;}`
 
 ```JAVA
 import crafttweaker.item.IItemStack;
