@@ -63,11 +63,11 @@
 
 你可以将运算结果用在在函数中，或者作为条件语句的判定：
 
-    //prints 4
+    //打印 4
     print(3+1);
     
-    //removes the item on array[4]
+    //移除数组[4]中物品的合成配方
     recipes.remove(array[3+1]);
     
     //
-    if(3+1 == 2*2) {print("Used a calculation!")}
+    if(3+1 == 2*2) {print("使用了计算！")}
