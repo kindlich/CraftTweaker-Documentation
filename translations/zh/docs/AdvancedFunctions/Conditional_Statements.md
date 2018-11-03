@@ -1,22 +1,22 @@
 # 条件语句
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+您可能需要仅在满足某些条件 (或除了某些条件) 时才执行的代码。 这就是你需要条件语句的地方。
 
 ## If
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+if 语句是条件语句的第一部分。 它用于声明接下来的代码块只有在判定条件为 true 才会执行。 注意！两个等号才是比较运算符（一个等号是赋值运算符！）
 
 ```Java
 val test = 0;
 
-if(test == 0){ //true
-    print("Test is zero!");
+if(test == 0){ //结果为 true
+    print("Test 等于零！");
 }
 ```
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Else 语句需要加在条件语句的后，用于声明当 if 语句的条件为 False 时候执行的代码块。 
 
 ```Java
 var test = 0;
