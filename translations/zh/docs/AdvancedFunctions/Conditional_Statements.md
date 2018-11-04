@@ -21,26 +21,26 @@ Else 语句需要加在条件语句的后，用于声明当 if 语句的条件�
 ```Java
 var test = 0;
 
-if(test == 0){//true
-    //will be executed when test is equal to 0
-    print("Test is zero!");
+if(test == 0){//结果为true
+    //当 test 等于 0 时执行的代码块
+    print("test 等于 0！");
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //当 test 不等于 0 时执行的代码块
+    print("test 不等于 0！");
 }
 
 test = 1
-if(test == 0){//false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
-} else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+if(test == 0){//结果为false
+    //当 test 等于 0 时执行的代码块
+    print("现在，test 等于 0！");
+} else
+    //当 test 不等于 0 时执行的代码块
+    print("现在，test 不等于 0！");
 }
 
 ```
 
-## Things to check for
+## 注意事项
 
 Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
 
