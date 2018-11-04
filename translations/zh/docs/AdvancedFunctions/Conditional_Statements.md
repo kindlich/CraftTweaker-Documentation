@@ -67,17 +67,17 @@ val d = "你好";
 val e = "世界";
 val f = d~e; //f = "你好世界"，波浪号只起到链接字符串的作用
 
-//|(或) 逻辑判断，两个条件只要一个结果为真，输出结果也为真
+//|(或) 逻辑判断，两个条件的判断结果只要一个为 true，输出就为 true
 if(d=="你好" | e == "你好"){print("OR1!");}       //true
 if(d=="你好" | e == "世界"){print("OR2!");}       //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
-if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
-if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
+//^(异或)逻辑判断，有且仅有一个条件的判断结果为 true 时输出结果才为 true，否则输出结果为 false
+if(d=="你好" ^ e == "你好"){print("XOR1!");}      //true
+if(d=="你好" ^ e == "世界"){print("XOR2!");}      //false
 
-//&(与)逻辑判断，只有两个条件都为 true 时结果为 true 否则结果为
-if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
-if(d=="Hello" & e == "World"){print("AND2!");}      //true
+//&(与)逻辑判断，只有两个条件的判断结果都为 true 时输出结果才为 true，否则结果为 false
+if(d=="你好" & e == "你好"){print("AND1!");}      //false
+if(d=="世界" & e == "世界"){print("AND2!");}      //true
 ```
 
 ## The ? Operator
