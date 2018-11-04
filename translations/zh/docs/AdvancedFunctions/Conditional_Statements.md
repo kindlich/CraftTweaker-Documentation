@@ -80,21 +80,21 @@ if(d=="你好" & e == "你好"){print("AND1!");}      //false
 if(d=="世界" & e == "世界"){print("AND2!");}      //true
 ```
 
-## ? 运算
+## ? 运算符
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+总是不停地输入 if/else 判定结构显得十分的冗余， 尤其是当你只需要做普通的条件判定时。 这就是 `?` 运算符存在的意义。 它的逻辑和 if/else 完全一致，只是大大减少了代码量。 语法： `boolean ? if : else`
 
 ```Java
 val switchy = false;
 
-//prints switchy state
+//打印 switchy 的值
 print("Switchy is " ~ switchy);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
+//如果 switchy 的值为true，那么 vInt = 1，反之 vInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
+//如果 switchy 的值为true，那么打印 “你好”，反之打印“再见”
 print(switchy ? "Hello" : "Bye");
 
 //Prints "Bye" if switchy is stue, otherwise prints "Hello"
