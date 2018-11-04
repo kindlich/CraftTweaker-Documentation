@@ -106,23 +106,23 @@ switchy ? print("再见") : print("你好");
 
 你可以使用下面的操作符。 所有的例子结果都为 true。
 
-| 名称   | 运算符     | 解释                                                                                | 例子           |
-| ---- | ------- | --------------------------------------------------------------------------------- | ------------ |
-| 非    | `!`     | 反转布尔值                                                                             | !false       |
-| 不等于  | `!=`    | 判断符号前的数值是否不等于符号后的数值                                                               | 1 != 2       |
-| 等于   | `==`    | 判断符号前的数值是否等于符号后的数值                                                                | 1 == 1       |
-| 大于   | `>`  | 判断符号前数值是否大于符号后数值                                                                  | 1 > 2        |
-| 大于等于 | `>=` | 判断符号前数值是否大于等于符号后数值                                                                | 1 >= 1       |
-| 小于   | `<`  | 判断符号前数值是否小于符号后数值                                                                  | 1 < 2        |
-| 小于等于 | `<=` | 判断符号前数值是否小于等于符号后数值                                                                | 1 <= 1       |
-| 与    | `&` | 判断符号前的值与符号后的值是否同时为 true；有一个为 false，或者全为 false 则会输出 false                          | true & true  |
-| 或    | `|`     | 判断符号前的值与符号后的值是否有一个为 true； 如果有一个为 true 则 结果为 true                                  | true | true  |
-| XOR  | `^`     | Checks if either the value before or after is true, false if both or none is true | true ^ false |
+| 名称   | 运算符     | 解释                                                       | 例子           |
+| ---- | ------- | -------------------------------------------------------- | ------------ |
+| 非    | `!`     | 反转布尔值                                                    | !false       |
+| 不等于  | `!=`    | 判断符号前的值是否不等于符号后的值                                        | 1 != 2       |
+| 等于   | `==`    | 判断符号前的值是否等于符号后的值                                         | 1 == 1       |
+| 大于   | `>`  | 判断符号前的值是否大于符号后的值                                         | 1 > 2        |
+| 大于等于 | `>=` | 判断符号前的值是否大于等于符号后的值                                       | 1 >= 1       |
+| 小于   | `<`  | 判断符号前的值是否小于符号后的值                                         | 1 < 2        |
+| 小于等于 | `<=` | 判断符号前的值是否小于等于符号后的值                                       | 1 <= 1       |
+| 与    | `&` | 判断符号前的值与符号后的值是否同时为 true；有一个为 false，或者全为 false 则会输出 false | true & true  |
+| 或    | `|`     | 判断符号前的值与符号后的值是否有一个为 true； 如果有一个为 true 则 结果为 true         | true | true  |
+| 异或   | `^`     | 判断符号前的值与符号后的值是否为 true；全为 false，或者全为 true 则会输出 false      | true ^ false |
 
-## The in/has Operator
+## In/has 操作符
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+`in `和` has `操作符用来检查某个东西是否存在于某个东西中。  
+首先需要一个先要检索的列表，接下来使用` in `/` has `操作符来检查给定数值是否存在。 `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
 ### in/has loadedMods
 
