@@ -122,35 +122,35 @@ switchy ? print("再见") : print("你好");
 ## In/has 操作符
 
 `in `和` has `操作符用来检查某个东西是否存在于某个东西中。  
-首先需要一个先要检索的列表，接下来使用` in `/` has `操作符来检查给定数值是否存在。 `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+首先需要一个先要检索的列表，接下来使用` in `/` has `操作符来检查给定数值是否存在。 对于 Zenscript 而言，`in `和` has `操作符没有任何区别，但人们通常在检测一个物品是否属于一个集合以及 for 循环中使用 `has`，因为这更加符合英语语法。
 
-### in/has loadedMods
+### in/has loadedMods（检测加载模组）
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+你可以检测某个指定模组是否在 loadedMods 列表中
 
 ```Java
-//While contains checks can use in
+//尽管可以使用 in
 if(loadedMods in "mcp"){
-    print("Minecraft Coder Pack loaded");
+    print("已加载 Minecraft Coder Pack");
 }
 
-//Most people prefer using has
+//大多数人倾向于使用 has
 if(loadedMods has "mcp"){
-    print("Minecraft Coder Pack loaded");
+    print("已加载 Minecraft Coder Pack");
 }
 ```
 
-### in/has IIngredient
+### in/has IIngredient（检测材料）
 
-You can also check if an item matches a definition by comparing two IIngredients.
+你也可以通过对比两个 IIngredients 对象，来检测一个物品是否满足定义。
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+    print("铁锭的矿物词典是正确的");
 }
 
 if(<ore:ingotIron> has <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+    print("铁锭的矿物词典是正确的");
 }
 ```
 
