@@ -154,7 +154,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 }
 ```
 
-This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+只有在` has `之前的材料对象包含于`has`之后的材料对象时，结果才为真： 假设有一个包含所有粉状物品的材料对象（包括红石（redstone）和荧石（glowstone））：
 
 ```java
 val redstone = <minecraft:redstone>;
@@ -162,12 +162,12 @@ val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-//True as redstone is a part of alldusts
+//结果为 true，因为 redstone 属于 alldusts
 if(allDusts has redstone) {
 
 }
 
-//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+//结果为 false，因为 allDusts 包含 redstone 和 glowstone，但 redstone 只包含 redstone.
 if(redstone has allDusts) {
 
 }
