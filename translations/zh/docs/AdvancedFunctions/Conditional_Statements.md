@@ -95,29 +95,29 @@ val vInt = switchy ? 1 : 2;
 print(vInt);
 
 //如果 switchy 的值为true，那么打印 “你好”，反之打印“再见”
-print(switchy ? "Hello" : "Bye");
+print(switchy ? "你好" : "再见");
 
-//Prints "Bye" if switchy is stue, otherwise prints "Hello"
-switchy ? print("Bye") : print("Hello");
+//如果 switchy 的值为true，那么打印 “再见”，反之打印“你好”
+switchy ? print("再见") : print("你好");
 
 ```
 
-## Operators
+## 运算符
 
-You can use these operators. All the examples given evaluate to true.
+你可以使用下面的操作符。 所有的例子结果都为 true。
 
-| Name             | token   | Explanation                                                                          | Example      |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| 名称              | 运算符     | 解释                                                                                   | 例子           |
+| --------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
+| 非               | `!`     | 反转布尔值                                                                                | !false       |
+| 不等于             | `!=`    | 检查符号前后数值是否不等                                                                         | 1 != 2       |
+| 等于              | `==`    | 检查符号前后数值是否相等                                                                         | 1 == 1       |
+| 大于              | `>`  | 检查符号前数值是否大于后面数值                                                                      | 1 > 2        |
+| 大于等于            | `>=` | 检查符号前数值是否大于等于后面数值                                                                    | 1 >= 1       |
+| 小于              | `<`  | 检查符号前数值是否小于后面数值                                                                      | 1 < 2        |
+| Lesser or Equal | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
+| AND             | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
+| OR              | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
+| XOR             | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
 
 ## The in/has Operator
 
