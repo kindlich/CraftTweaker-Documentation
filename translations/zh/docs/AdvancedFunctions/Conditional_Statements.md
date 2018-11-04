@@ -95,9 +95,9 @@ val vInt = switchy ? 1 : 2;
 print(vInt);
 
 //如果 switchy 的值为true，那么打印 “你好”，反之打印“再见”
-print(switchy ? "你好" : "再见");
+print(switchy ? "Hello" : "Bye");
 
-//如果 switchy 的值为true，那么打印 “再见”，反之打印“你好”
+//Prints "Bye" if switchy is true, otherwise prints "Hello"
 switchy ? print("再见") : print("你好");
 
 ```
@@ -142,7 +142,10 @@ if(loadedMods has "mcp"){
 
 ### in/has IIngredient（检测材料）
 
-你也可以通过对比两个 IIngredients 对象，来检测一个物品是否满足定义。
+You can also check if an item matches a definition by comparing two IIngredients.  
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
+In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
