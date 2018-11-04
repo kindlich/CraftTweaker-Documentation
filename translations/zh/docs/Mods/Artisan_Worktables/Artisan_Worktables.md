@@ -1,4 +1,4 @@
-# Artisan Worktables（建筑师工作台）
+# Artisan Worktables
 
 ## 信息:
 
