@@ -42,9 +42,9 @@ if(test == 0){//结果为false
 
 ## 注意事项
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+支持`+`、`-`、`*`、`/`、`mod`和`链接字符串(~)`运算符
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+也支持`或(|)`、`与(&)`和`异或(^)`逻辑运算符
 
 ```Java
 //You can check for:
