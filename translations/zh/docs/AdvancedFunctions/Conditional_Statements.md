@@ -106,18 +106,18 @@ switchy ? print("再见") : print("你好");
 
 你可以使用下面的操作符。 所有的例子结果都为 true。
 
-| 名称              | 运算符     | 解释                                                                                   | 例子           |
-| --------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| 非               | `!`     | 反转布尔值                                                                                | !false       |
-| 不等于             | `!=`    | 检查符号前后数值是否不等                                                                         | 1 != 2       |
-| 等于              | `==`    | 检查符号前后数值是否相等                                                                         | 1 == 1       |
-| 大于              | `>`  | 检查符号前数值是否大于后面数值                                                                      | 1 > 2        |
-| 大于等于            | `>=` | 检查符号前数值是否大于等于后面数值                                                                    | 1 >= 1       |
-| 小于              | `<`  | 检查符号前数值是否小于后面数值                                                                      | 1 < 2        |
-| Lesser or Equal | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND             | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR              | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR             | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| 名称   | 运算符     | 解释                                                                                | 例子           |
+| ---- | ------- | --------------------------------------------------------------------------------- | ------------ |
+| 非    | `!`     | 反转布尔值                                                                             | !false       |
+| 不等于  | `!=`    | 判断符号前的数值是否不等于符号后的数值                                                               | 1 != 2       |
+| 等于   | `==`    | 判断符号前的数值是否等于符号后的数值                                                                | 1 == 1       |
+| 大于   | `>`  | 判断符号前数值是否大于符号后数值                                                                  | 1 > 2        |
+| 大于等于 | `>=` | 判断符号前数值是否大于等于符号后数值                                                                | 1 >= 1       |
+| 小于   | `<`  | 判断符号前数值是否小于符号后数值                                                                  | 1 < 2        |
+| 小于等于 | `<=` | 判断符号前数值是否小于等于符号后数值                                                                | 1 <= 1       |
+| 与    | `&` | 判断符号前的值与符号后的值是否同时为 true；有一个为 false，或者全为 false 则会输出 false                          | true & true  |
+| 或    | `|`     | 判断符号前的值与符号后的值是否有一个为 true； True, is both are true                                  | true | true  |
+| XOR  | `^`     | Checks if either the value before or after is true, false if both or none is true | true ^ false |
 
 ## The in/has Operator
 
