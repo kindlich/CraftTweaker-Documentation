@@ -80,7 +80,7 @@ if(d=="你好" & e == "你好"){print("AND1!");}      //false
 if(d=="世界" & e == "世界"){print("AND2!");}      //true
 ```
 
-## The ? Operator
+## ? 运算
 
 Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 
