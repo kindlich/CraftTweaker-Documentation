@@ -47,35 +47,35 @@ if(test == 0){//结果为false
 也支持`或(|)`、`与(&)`和`异或(^)`逻辑运算符
 
 ```Java
-//You can check for:
+//可以判断的类型包括：
 
 
-//Number values
+//数值
 val a = 0 as int;
 if(a==0){print("NumVal");}
 
-//Calculated number values
+//运算结果
 val b = 1;
 val c = 5;
-//All evaluate to true
+//一下所有结果均为 true
 if(b+c==6){print("Num1!");}
 if(b*c==5){print("Num2!");}
 if(b/c==0.2){print("Num3!");}
 
-//OR, XOR, AND
-val d = "Hello";
-val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+//或、异或和与逻辑
+val d = "你好";
+val e = "世界";
+val f = d~e; //f = "你好世界"，波浪号只起到链接字符串的作用
 
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
-if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
-if(d=="Hello" | e == "World"){print("OR2!");}       //true
+//|(或) 逻辑判断，两个条件只要一个结果为真，输出结果也为真
+if(d=="你好" | e == "你好"){print("OR1!");}       //true
+if(d=="你好" | e == "世界"){print("OR2!");}       //true
 
 //^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
 if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
 if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
+//&(与)逻辑判断，只有两个条件都为 true 时结果为 true 否则结果为
 if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
 if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
