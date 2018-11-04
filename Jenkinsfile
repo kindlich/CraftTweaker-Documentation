@@ -3,10 +3,11 @@
 pipeline {
     agent any
     stages {
-        stage('Setup') {
+        stage('Cleanup') {
             steps {
-                echo 'Setting up pip dependencies'
-                //pip install mkdocs==0.16.3
+                echo 'Cleaning up'
+                sh 'chmod +x cleanup.sh'
+                sh 'bash ./cleanup.sh'
             }
         }
         stage('Build') {
