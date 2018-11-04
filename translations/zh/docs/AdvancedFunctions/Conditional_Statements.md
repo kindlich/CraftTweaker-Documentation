@@ -116,7 +116,7 @@ switchy ? print("再见") : print("你好");
 | 小于   | `<`  | 判断符号前数值是否小于符号后数值                                                                  | 1 < 2        |
 | 小于等于 | `<=` | 判断符号前数值是否小于等于符号后数值                                                                | 1 <= 1       |
 | 与    | `&` | 判断符号前的值与符号后的值是否同时为 true；有一个为 false，或者全为 false 则会输出 false                          | true & true  |
-| 或    | `|`     | 判断符号前的值与符号后的值是否有一个为 true； True, is both are true                                  | true | true  |
+| 或    | `|`     | 判断符号前的值与符号后的值是否有一个为 true； 如果有一个为 true 则 结果为 true                                  | true | true  |
 | XOR  | `^`     | Checks if either the value before or after is true, false if both or none is true | true ^ false |
 
 ## The in/has Operator
